@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //a. array of objects
+
+        let onlineStore = [
+            {id: 1, name: "Laptop", category: "Electronics", price: 9200},
+            {id: 2, name: "Smartphone", category: "Electronics", price: 12000 },
+            {id: 4, name: "Shirt", category: "Fashion", price: 350},
+            {id: 5, name: "Jeans", category: "Fashion", price: 500},
+            {id: 6, name: "Backpack", category: "Fashion", price: 5550},
+            
+        ]
+        console.log(onlineStore);
+
+
+        //b. sort descending order
+        
+        let onlineStore2 = onlineStore.sort((a,b) => b.price - a.price);    //function for descending order
+        console.log(onlineStore2);
+
+        //let onlineStore2 = onlineStore.sort(function(a,b){
+           // return  b-a;
+        //}); 	   
+        //console.log(onlineStore2);
+
+
+        //c. display electronics department
+       	   
+        let onlineStore3 = onlineStore.filter(item => item.category === 'Electronics');    //function for filtering. 	 
+        console.log(onlineStore3);
+
+
+
+        //d. calculate the total price for all the products on onlineStore use the reduce method and  function.
+        
+        //m1
+            let onlineStore4 = onlineStore.reduce((a,b) => a + b.price, 0);   
+            console.log(onlineStore4);
+
+           
+         
+        //m2
+        function totalprice(price){
+            return prices.reduce(function(sum, price){
+                return sum + price;
+            },0)
+        }     //function for total price.
+        
+       
+
+        //e. calculate the average price 
+        //average price
+
+        //m1
+        console.log(totalprice(price));
+        let avg = totalmark(price)/price.length;
+        console.log(avg);      
+
+
+        //m2
+            //let onlineStore5 = onlineStore.reduce((a, b) => a + b.price, 0) / onlineStore.length;   //function for average price.
+           // console.log(onlineStore5);
+
+
+
+        
+
+        //f. if store offers 12% discount, calculate the new price for the laptop.
+        
+        let onlineStore6 = onlineStore.map(item => item.price * 0.12); 	  //function for transforming the price.
+
+
+
+        //g.
+        
+       
+
+
+
+
+        
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

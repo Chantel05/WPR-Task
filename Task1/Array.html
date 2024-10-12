@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //a. 
+        let fruit = ["apple", "kiwi", "cherry"]; 
+        console.log(fruit);
+
+        let vegetables = ["brocolli", "potatoes", "spinach"]; 
+        console.log(vegetables);
+        
+
+        //b. 
+        console.log(vegetables.length) //3 	   
+
+       
+       //c.joining two arrays using the join method
+       
+       //let food = fruit.join(", ")+", "+vegetables.join(", ");
+        //console.log(food);
+
+       let food = fruit.concat(vegetables); //m2
+        console.log(food); 
+
+        
+
+       //d. splice method
+       
+       food.splice(food.length -2, 2); 
+       console.log(food) 
+       
+
+       //e. descending function
+       
+       let food2 = fruit.concat(vegetables).sort(function(a,b){
+            return b-a
+        }); 	   
+        console.log(food2);
+        
+        
+        //f. splice method
+
+        let food3 = fruit.concat(vegetables).splice(0, fruit.length);
+        console.log(food3);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
